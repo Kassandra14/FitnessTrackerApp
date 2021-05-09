@@ -8,9 +8,9 @@ This app uses noSQL, mongo and mongoose to save user data
 
 * As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
 
-## Business Context
+## Usage
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
+Run from server.js You can use this app to add exercises, view exercise duration
 
 ## Acceptance Criteria
 
@@ -33,8 +33,6 @@ To deploy an application with a MongoDB database to Heroku, you'll need to set u
   * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
 
   * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
-
-
 
 
 ## URLS:
