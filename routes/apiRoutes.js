@@ -1,8 +1,6 @@
-//routes/api.js
+//apiroutes
 const router = require("express").Router();
 const Workout = require("../models/workout.js");
-
-
 const collections = ["workout"];
 
 router.get("/api/workouts", (req, res) => {
@@ -28,6 +26,8 @@ router.post("/api/workouts", ({ body }, res) => {
 
     Workout.create(body)
         .then((dbWorkout) => {
+            params.id,
+            { }
             res.json(dbWorkout);
         })
         .catch((err) => {
@@ -51,8 +51,9 @@ router.put("/api/workouts/:id", ({ params, body }, res) => {
         });
 })
 //get last workout
-router.get("/api/workouts/range", ({ body }, res) => {
-    Workout.find({}).limit(7);
+
+router.get("/api/workouts", ({ body }, res) => {
+    db.Workout.find({}).limit(7);
     Workout.aggregate([
         {
             $addFields: {
